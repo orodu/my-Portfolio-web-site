@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 export default function About() {
   const stats = [
-    { label: 'Years Experience', value: '3+' },
+    { label: 'Years Experience', value: '1+' },
     { label: 'Projects Completed', value: '20+' },
   ];
 
@@ -37,7 +37,7 @@ export default function About() {
         >
           <h3 className="text-3xl font-bold mb-6 text-white tracking-tight">About Me</h3>
           <p className="text-slate-400 mb-6 leading-relaxed">
-            Hello! I'm Oroduen Fortune Chichi, a passionate Front-End Developer based in Nigeria. Over the past 3 years, I've dedicated myself to bridging the gap between design and functionality. 
+            Hello! I'm Oroduen Fortune Chichi, a passionate Front-End Developer based in Nigeria. Over the past 1 year, I've dedicated myself to bridging the gap between design and functionality. 
           </p>
           <p className="text-slate-400 mb-8 leading-relaxed">
             I specialize in building scalable applications with React and ensuring every pixel is perfectly placed using modern CSS architectures. My goal is to create digital experiences that are not just beautiful, but also performant and user-centric.

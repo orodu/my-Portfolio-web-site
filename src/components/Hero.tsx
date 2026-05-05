@@ -29,7 +29,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-slate-400 text-base md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          With 3 years of experience, I craft high-performance, accessible, and visually stunning web interfaces using modern technologies.
+          With 1 year of experience, I craft high-performance, accessible, and visually stunning web interfaces using modern technologies.
         </motion.p>
         
         <motion.div 

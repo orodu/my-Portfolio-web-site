@@ -21,7 +21,7 @@ export default function Contact() {
   };
 
   const socialLinks = [
-    { icon: <Github />, href: '#' },
+    { icon: <Github />, href: 'https://github.com/orodu' },
     { icon: <Linkedin />, href: '#' },
     { icon: <Twitter />, href: '#' },
     { icon: <Mail />, href: 'mailto:chichioroduen@gmail.com' },

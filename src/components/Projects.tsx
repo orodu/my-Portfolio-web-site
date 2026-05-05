@@ -14,6 +14,22 @@ export default function Projects() {
       description: 'High-performance landing page for a travel startup focusing on smooth animations and accessibility.',
       tags: ['HTML5', 'GSAP', 'Next.js'],
       icon: <Smartphone className="w-10 h-10 text-slate-500" />,
+    },
+    {
+      title: 'CFO Farms',
+      description: 'A small and medium scale farm website showcasing products, services, and responsive farm management features.',
+      tags: ['React', 'Tailwind', 'Vercel'],
+      icon: <Laptop className="w-10 h-10 text-slate-500" />,
+      githubLink: 'https://github.com/orodu/cfo-farms',
+      liveLink: 'https://cfo-farms.vercel.app/',
+    },
+    {
+      title: 'Invoice App',
+      description: 'A modern invoice application for creating, managing, and exporting bills with a clean responsive interface.',
+      tags: ['React', 'Tailwind', 'Vercel'],
+      icon: <Smartphone className="w-10 h-10 text-slate-500" />,
+      githubLink: 'https://github.com/orodu/invoice-app',
+      liveLink: 'https://invoice-app-jade-gamma.vercel.app/',
     }
   ];
 
@@ -61,8 +77,16 @@ export default function Projects() {
                 <h4 className="text-xl font-bold mb-3 text-white flex items-center justify-between">
                   {project.title}
                   <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <Github size={18} className="text-slate-500 hover:text-white cursor-pointer" />
-                    <ExternalLink size={18} className="text-slate-500 hover:text-white cursor-pointer" />
+                    {project.githubLink && (
+                      <a href={project.githubLink} target="_blank" rel="noreferrer" aria-label={`${project.title} GitHub`}>
+                        <Github size={18} className="text-slate-500 hover:text-white cursor-pointer" />
+                      </a>
+                    )}
+                    {project.liveLink && (
+                      <a href={project.liveLink} target="_blank" rel="noreferrer" aria-label={`${project.title} Live site`}>
+                        <ExternalLink size={18} className="text-slate-500 hover:text-white cursor-pointer" />
+                      </a>
+                    )}
                   </div>
                 </h4>
                 <p className="text-slate-400 text-sm mb-6 leading-relaxed">
