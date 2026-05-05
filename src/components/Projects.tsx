@@ -20,6 +20,7 @@ export default function Projects() {
       description: 'A small and medium scale farm website showcasing products, services, and responsive farm management features.',
       tags: ['React', 'Tailwind', 'Vercel'],
       icon: <Laptop className="w-10 h-10 text-slate-500" />,
+      imageUrl: 'https://res.cloudinary.com/dhd0kxufl/image/upload/v1777944485/CFOdarshboard_fk5i1n.png',
       githubLink: 'https://github.com/orodu/cfo-farms',
       liveLink: 'https://cfo-farms.vercel.app/',
     },
@@ -28,6 +29,7 @@ export default function Projects() {
       description: 'A modern invoice application for creating, managing, and exporting bills with a clean responsive interface.',
       tags: ['React', 'Tailwind', 'Vercel'],
       icon: <Smartphone className="w-10 h-10 text-slate-500" />,
+      imageUrl: 'https://res.cloudinary.com/dhd0kxufl/image/upload/v1777944483/InvoiceApp_shaa7m.png',
       githubLink: 'https://github.com/orodu/invoice-app',
       liveLink: 'https://invoice-app-jade-gamma.vercel.app/',
     }
@@ -69,7 +71,11 @@ export default function Projects() {
               <div className="h-64 bg-slate-800 flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-linear-to-b from-transparent to-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="transform group-hover:scale-110 transition-transform duration-500">
-                  {project.icon}
+                  {project.imageUrl ? (
+                    <img src={project.imageUrl} alt={project.title} className="w-full h-full object-cover" />
+                  ) : (
+                    project.icon
+                  )}
                 </div>
               </div>
               
